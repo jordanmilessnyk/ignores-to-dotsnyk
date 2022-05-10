@@ -1,0 +1,6 @@
+/env/
+/build/
+/ignores_to_dotsnyk.egg-info/
+/.idea/
+/test.json
+.DS_Store

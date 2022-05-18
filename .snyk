@@ -1,0 +1,15 @@
+ignore:
+  SNYK-JS-ASYNC-2441827:
+  - '*':
+      created: '2022-04-25T12:25:10.856Z'
+      expires: '2022-05-09T12:25:10.729Z'
+      reason: ''
+  SNYK-JS-SQLITE3-2388645:
+  - '*':
+      created: '2022-05-16T00:15:55.966Z'
+      reason: ''
+  npm:base64url:20180511:
+  - '*':
+      created: '2022-05-17T17:44:25.063Z'
+      reason: ''
+version: v1.25.0

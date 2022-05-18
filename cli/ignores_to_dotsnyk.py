@@ -1,6 +1,6 @@
 import sys
 import click
-from issues import retrieve_issues, issues_to_snyk
+from ignores import retrieve_ignores, ignores_to_snyk
 
 
 @click.command()
@@ -11,8 +11,8 @@ from issues import retrieve_issues, issues_to_snyk
 def ignores_to_dotsnyk(org_id, project_id, api_key, directory):
 
     try:
-        issues = retrieve_issues(org_id, project_id, api_key)
-        issues_yaml = issues_to_snyk(issues)
+        issues = retrieve_ignores(org_id, project_id, api_key)
+        issues_yaml = ignores_to_snyk(issues)
 
         write_file = '{}/.snyk'.format(directory) if directory else '.snyk'
 
